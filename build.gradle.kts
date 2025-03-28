@@ -14,7 +14,7 @@ repositories {
 kotlin {
     jvm {
         compilations.all {
-            kotlinOptions.jvmTarget = "17"
+            kotlinOptions.jvmTarget = JavaVersion.VERSION_20.majorVersion
         }
         withJava()
     }
@@ -43,7 +43,7 @@ compose.desktop {
         mainClass = "MainKt"
 
         nativeDistributions {
-            targetFormats(TargetFormat.Dmg, TargetFormat.Exe)
+            targetFormats(TargetFormat.Dmg, TargetFormat.Exe, TargetFormat.Msi)
             packageName = "KMPDesktopApp"
             packageVersion = "1.0.0"
         }
