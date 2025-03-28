@@ -1,0 +1,14 @@
+--app-image
+"/Users/yusril/AndroidStudioProjects/KMPDesktopApp/build/compose/binaries/main/app/KMPDesktopApp.app"
+--resource-dir
+"/Users/yusril/AndroidStudioProjects/KMPDesktopApp/build/compose/tmp/resources"
+--type
+"dmg"
+--dest
+"/Users/yusril/AndroidStudioProjects/KMPDesktopApp/build/compose/binaries/main/dmg"
+--name
+"KMPDesktopApp"
+--app-version
+"1.0.0"
+--mac-entitlements
+"/Users/yusril/AndroidStudioProjects/KMPDesktopApp/build/compose/default-resources/1.7.3/default-entitlements.plist"
