@@ -27,7 +27,7 @@ jobs:
         run: ./gradlew packageReleaseDistributionForCurrentOS
 
       - name: Upload Windows Build Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: KMP-Windows-MSI
           path: build/compose/binaries/main/msi/
@@ -51,7 +51,7 @@ jobs:
         run: ./gradlew packageReleaseDistributionForCurrentOS
 
       - name: Upload macOS Build Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: KMP-macOS-DMG
           path: build/compose/binaries/main/dmg/
