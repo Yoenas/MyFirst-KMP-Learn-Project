@@ -23,14 +23,20 @@ jobs:
       - name: Grant execute permission for Gradlew
         run: chmod +x gradlew
 
-      - name: Build Windows Installer
-        run: ./gradlew packageMsi
+      - name: Build Windows Installer (.msi and .exe)
+        run: ./gradlew packageMsi packageExe
 
       - name: Upload Windows MSI Artifact
         uses: actions/upload-artifact@v4
         with:
           name: KMP-Windows-MSI
           path: build/compose/binaries/main/msi/
+
+      - name: Upload Windows EXE Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: KMP-Windows-EXE
+          path: build/compose/binaries/main/exe/*.exe
 
   build-macos:
     runs-on: macos-latest  # Use macOS runner for .dmg build
