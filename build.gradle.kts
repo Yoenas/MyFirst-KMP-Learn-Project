@@ -14,7 +14,7 @@ repositories {
 kotlin {
     jvm {
         compilations.all {
-            kotlinOptions.jvmTarget = JavaVersion.VERSION_20.majorVersion
+            kotlinOptions.jvmTarget = JavaVersion.VERSION_17.majorVersion
         }
         withJava()
     }
